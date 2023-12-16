@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %} Login {% endblock title%}
+{% block head %}
+{{ super() }}
+{% endblock head %}
+{% block content %}
+
+
+
+<table action="{{ url_for('order') }}" method="post">
+    <tr> 
+      <th> Tea </th>
+      <th> Description</th>
+      <th> Image</th>
+      <th>Price</th>
+      <th> Order</th>
+    </tr>
+    <tr>
+      <td> Herbal Tea</td>
+      <td> A soothing blend of herbs</td>
+      <td> $50.00</td>
+    
+      
+    </tr>
+
+    <tr>
+      <td> Chamomile Tea</td>
+      <td> Relaxing and calming</td>
+      <td>$20.00</td>
+      
+      
+     </tr>
+
+     <tr>
+      <td>Green Tea</td>
+      <td> Rich in antioxidants</td>
+      <td>$10.00</td>
+      
+     </tr>
+
+     <tr>
+      <td>Hibiscus Tea</td>
+      <td>Refreshing and Energizing</td>
+      <td>$10.00</td>
+    
+      
+     </tr>
+
+
+     <tr>
+      <td>Spicy Black Tea</td>
+      <td>Spicy and Calming</td>
+      <td>$40.00</td>
+      
+     </tr>
+
+
+     <tr>
+      <td>Ginger Tea</td>
+      <td> Anti-inflammatory</td>
+      <td>$15.00</td>
+     </tr>
+          
+
+</table>
+
+{% endblock content %}
+{% block footer %}
+p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Order here</a></p>
+{{ super() }}
+{% endblock footer %}
+

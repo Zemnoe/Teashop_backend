@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        {% block head %}
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href="{{url_for('static', filename='main.css')}}">
+        <title> {% block title%}{% endblock title %}</title>
+        {% endblock head %}
+    </head>
+    <body>
+    <div>
+        {% block content %}
+        <nav class="topnav">
+            <ul>
+                <li><a href="/">Home</li>
+               <li><a href="/register">Register</a></li>
+               <li><a href="/login.html">Login</a></li>
+               <li><a href="/order.html">Order</a></li>
+            </ul>
+        </nav>
+        <h1> Welcome to leenas Tea shop</h1>
+        <p> home of exclusive and exotic tea </p>
+        {% endblock content %}
+    </div>
+    <div>
+        {% block footer %}
+        &copy;copyright Leenas Teashop 2023;
+        {% endblock %}
+    </div>
+    </body>
+    </html>
