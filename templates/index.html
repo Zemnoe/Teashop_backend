@@ -1,15 +1,44 @@
 {% extends "base.html" %}
-{% block title %}Leenas teashop {% endblock title%}
 {% block head %}
-{{ super() }}
+    <meta name = "description" content="Home page for Leenas Teashop">
 {% endblock head %}
+{% block title %}<title>Home</title>{% endblock title %}
+{% block stylesheets %}
+
 {% block content %}
 
- <div>
- <h1>leenas Teashop</h1>
- </div>
-{{ super()}}
+<div class="container">
+    <h1> Welcome to leenas Teashop</h1>
+
+    <p>We are a tea shop that specializes in providing high-quality, organic teas.
+        we source our teas from all around the world and strive to offer a wide 
+        variety to satistfy all tea enthusiasts. 
+    </p>
+
+    <h2> Our Products</h2>
+    <ul>
+        <li>Herbal Tea</li>
+        <li>Chamomile Tea</li>
+        <li>Green Tea</li>
+        <li>Hibiscus Tea</li>
+        <li>Spicy Black Tea</li>
+        <li>Ginger Tea</li>
+    </ul>
+</div>
 {% endblock content %}
 {% block footer %}
 {{ super() }}
 {% endblock footer %}
+
+
+
+
+
+
+
+
+
+
+
+
+

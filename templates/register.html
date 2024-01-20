@@ -5,28 +5,31 @@
 {% endblock head %}
 {% block content %}
 
- <div class ="container py-5 bg-white">
- <form action="{{ url_for('register') }}" method="post">
- <div class="msg">{{ msg }}</div>
- <div class="mb-5">
+ <div class ="container">
+
+    <h1> Register here </h1>
+
+    <form method="POST" action="{{ url_for('register') }}">
+
+ <div class="form-group">
  <label for ="username">Username</label>
  <input id="username" name="username" type="text" placeholder="Enter Your Username"
 class="textbox"/></br></br>
  </div>
 
- <div class="mb-5">
+ <div class="form-group">
  <label for ="cusername">Confirm Username</label>
  <input id="cusername" name="cusername" type="text" placeholder="confirm your username"
 class="textbox"/></br></br>
  </div>
 
- <div class="mb-5">
+ <div class="form-group">
  <label for ="password">Password</label>
  <input id="password" name="password" type="password" placeholder="Enter Your Password"
 class="textbox"/></br></br>
  </div>
 
- <div class="mb-5">
+ <div class="form-group">
  <label for ="cpassword">Confirm Password</label>
  <input id="cpassword" name="cpassword" type="password" placeholder="confirm your password"
 class="textbox"/></br></br>
